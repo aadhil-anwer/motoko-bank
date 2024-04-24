@@ -1,0 +1,26 @@
+{
+  "canisters": {
+    "brewery_backend": {
+      "main": "src/brewery_backend/main.mo",
+      "type": "motoko"
+    },
+    "brewery_frontend": {
+      "dependencies": [
+        "brewery_backend"
+      ],
+      "source": [
+        "src/brewery_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "brewery_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
